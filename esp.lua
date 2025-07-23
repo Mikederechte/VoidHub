@@ -61,8 +61,8 @@ local function updateESP()
     end
 end
 
--- Alle 5 Sekunden neu updaten
+-- Alle 1 Sekunden neu updaten
 while true do
-    task.wait(5)
+    task.wait(1)
     pcall(updateESP)
 end
